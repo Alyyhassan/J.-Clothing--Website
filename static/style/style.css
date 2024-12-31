@@ -1,0 +1,138 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and basic styling */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #2a2a2a; /* Light black background */
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1c1c1c; /* Slightly darker black for header */
+}
+
+header .logo.jpg h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f5f5f5;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6347; /* Tomato color for hover effect */
+}
+
+/* Home Section */
+.home-section {
+  position: relative;
+  background-image: url('home-background.jpg'); /* Replace with your own background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.home-section .home-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home-section .home-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sale Section */
+.sale-section,
+.men-section,
+.women-section {
+  padding: 50px 20px;
+  text-align: center;
+  margin: 0 0 64px 0;
+}
+
+.sale-section h2,
+.men-section h2,
+.women-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.sale-section p,
+.men-section p,
+.women-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.sale-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sale-images .sale-item {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .home-section .home-content h2 {
+      font-size: 2.5rem;
+  }
+
+  .home-section .home-content p {
+      font-size: 1rem;
+  }
+
+  .sale-images {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .sale-images .sale-item {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}

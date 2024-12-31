@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JunaidJamshedCom</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+
+        <div class="logo.jpg">
+            <img src="{{ url_for('static', filename='images/logo.jpg') }}">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <h2>Welcome to J. Clothing</h2>
+            <p>Experience the best in fashion with our exclusive collection for Mens, Womens with exciting Sales</p>
+            <p>Shop the latest trends and enjoy unbeatable sales!</p>
+        </div>
+    </section>
+
+    <!-- Sale Section -->
+    <section id="sale" class="sale-section">
+        <div class="sale-content">
+            <h2>Our Exclusive Sale</h2>
+            <p>Don't miss out on our limited-time offers! Discounts up to 50% off on selected items.</p>
+            <p>Browse the collection and grab your favorites before they are gone!</p>
+            <!-- Space for Sale Images -->
+            <div class="sale-images">
+                <img src="{{ url_for('static', filename='images/sale-image-1.jpg') }}" alt="Sale Item 1"
+                    class="sale-item">
+                <img src="{{ url_for('static', filename='images/sale-image-2.jpg') }}" alt="Sale Item 2"
+                    class="sale-item">
+                <img src="{{ url_for('static', filename='images/sale-image-3.jpg') }}" alt="Sale Item 3"
+                    class="sale-item">
+            </div>
+        </div>
+    </section>
+
+    <section id="men" class="men-section">
+        <div class="sale-content">
+            <h2>Men Section</h2>
+            <div class="sale-images">
+                <img src="{{ url_for('static', filename='images/sale-image-1.jpg') }}" alt="Sale Item 1"
+                    class="sale-item">
+                <img src="{{ url_for('static', filename='images/sale-image-2.jpg') }}" alt="Sale Item 2"
+                    class="sale-item">
+                <img src="{{ url_for('static', filename='images/sale-image-3.jpg') }}" alt="Sale Item 3"
+                    class="sale-item">
+            </div>
+        </div>
+    </section>
+
+    <section id="women" class="women-section">
+        <div>
+            <h2>Women Section</h2>
+            <div class="sale-images">
+                <img src="{{ url_for('static', filename='images/sale-image-1.jpg') }}" alt="Sale Item 1"
+                    class="sale-item">
+                <img src="{{ url_for('static', filename='images/sale-image-2.jpg') }}" alt="Sale Item 2"
+                    class="sale-item">
+                <img src="{{ url_for('static', filename='images/sale-image-3.jpg') }}" alt="Sale Item 3"
+                    class="sale-item">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
